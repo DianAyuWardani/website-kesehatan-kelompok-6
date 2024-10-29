@@ -1,0 +1,107 @@
+/* Gaya Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Gaya FAQ */
+.faq-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f8f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(198, 100, 167, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background:  #f9f8f8;
+    color: #090909;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: block;
+    text-decoration: none;
+}
+
+.faq-question:hover {
+    background: rgb(231, 227, 230);
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: #f9f9f9;
+}
+
+/* Menggunakan input untuk mengontrol tampilan */
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .faq-question {
+    background: #f9b4e5; /* Ubah warna latar belakang saat jawaban ditampilkan */
+}
+
+input[type="checkbox"]:checked + .faq-question + .faq-answer {
+    display: block;
+}
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus {
+    border-color: #228B22;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(228, 84, 182);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(200, 70, 160);
+}
